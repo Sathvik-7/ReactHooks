@@ -7,6 +7,7 @@ import ShoppingCartUseState from "./Component/UseStateVSUseReducer/ShoppingCartU
 import UseReducerExample2 from "./Component/UseReducer/UseReducerExample2.jsx";
 import Counter from "./Component/UseReducer/Exercise/Counter.jsx";
 import UseRefExample1 from "./Component/UseRef/UseRefExample1.jsx";
+import StopWatch from "./Component/UseRef/StopWatch.jsx";
 
 const App = () => 
   {
@@ -28,44 +29,39 @@ const App = () =>
       <TodoList/>
       */}
 
-      {/* Portal Examples 
-      <PortalCopyInput/>
+      {/* Portal Examples */} 
+      {/*<PortalCopyInput/> */}
+
+      {/* useEffect() examples */}
+      {/* <UseEffectExampleOne /> */}
+      {/* <UseEffectFetchData/> */}
+    
+      {/* Props Drilling */}
+      {/* <ComponentA name={name} />*/}
+
+      {/* Context API*/}
+      {/* <ComponentA/> */}
+      {/* 
+        <UserContext>
+        <UserProfile/>
+        </UserContext>
+      */}
+    
+      {/* useReducer */}
+      {/*  
+        <UseReducerExample1/>
+    
+        <ShoppingCartUseState/>
+
+        <UseReducerExample2/>
+
+        <Counter/>
       */}
 
-      {/* useEffect() examples
-        
-        <UseEffectExampleOne />
-      
-      */}
+      {/* useRef() */ } 
+      {/* <UseRefExample1/> */ }
+      <StopWatch/>
     
-    {/* 
-      <UseEffectFetchData/>
-    */}
-    
-    {/* Props Drilling */}
-    {/* 
-    <ComponentA name={name} />
-    */}
-
-    {/* Context API*/}
-    {/* <ComponentA/> */}
-    {/* 
-    <UserContext>
-      <UserProfile/>
-    </UserContext>
-    */}
-    {/* useReducer */}
-    {/* 
-    <UseReducerExample1/>
-    
-    <ShoppingCartUseState/>
-
-    <UseReducerExample2/>
-
-      <Counter/>
-    */}
-
-    <UseRefExample1/>
     </section>
     );
   }
