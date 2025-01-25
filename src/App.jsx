@@ -8,11 +8,14 @@ import UseReducerExample2 from "./Component/UseReducer/UseReducerExample2.jsx";
 import Counter from "./Component/UseReducer/Exercise/Counter.jsx";
 import UseRefExample1 from "./Component/UseRef/UseRefExample1.jsx";
 import StopWatch from "./Component/UseRef/StopWatch.jsx";
+import useFetch from "./Component/CustomHooks/useFetch.jsx";
+import UseIdExample from "./Component/UseID/UseIdExample.jsx";
 
 const App = () => 
   {
     //const [count , setCount] = useState(0);
-    
+    const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+
     return(
     <section>
       {/* useState() */}
@@ -60,8 +63,23 @@ const App = () =>
 
       {/* useRef() */ } 
       {/* <UseRefExample1/> */ }
-      <StopWatch/>
+      {/* <StopWatch/> */ }
     
+      {/* useImperativeHandle() */}
+      
+      {/*Custom hooks */}
+      {/* 
+          {data && data.map(items => 
+          {
+            return <p key={items.id}>{items.title}</p>
+          })} 
+      */}
+
+      {/* UseId */}
+      <UseIdExample/>
+
+      <UseIdExample/>
+      
     </section>
     );
   }
